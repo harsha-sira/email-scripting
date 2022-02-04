@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # input file
-input_.json
+input.json
