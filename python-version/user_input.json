@@ -1,0 +1,10 @@
+{ 
+    "email_address": "<Your email address>",
+    "app_password": "<your app password>",
+    "subject": "Subject",
+    "content": "plain text",
+    "addresses": [
+        "address1",
+        "address2"
+    ]
+}
