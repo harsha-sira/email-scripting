@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require("path");
 
 
-let rawdata = fs.readFileSync("input.json");
+let rawdata = fs.readFileSync("user_input.json");
 let input = JSON.parse(rawdata);
 
 const transporter = nodemailer.createTransport({

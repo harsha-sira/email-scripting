@@ -4,7 +4,7 @@ import json
 import time
 
 
-with open('input.json') as f:
+with open('user_input.json') as f:
     d = json.load(f)
 
 gmail_user = d['email_address']
