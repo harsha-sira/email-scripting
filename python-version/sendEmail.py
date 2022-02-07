@@ -21,13 +21,16 @@ try:
     addresses = d['addresses']
     subject = d['subject']
 
+    with open('content.txt') as i:
+        content = i.read()
+
     for to in addresses:
         try:
             email = EmailMessage()
             email['Subject'] = subject
             email['From'] = gmail_user
             email['To'] = to
-            email.set_content(d['content'], subtype='html')
+            email.set_content(content)
 
             # server_ssl.sendmail(sent_from, to, email_text)
             server_ssl.send_message(email)
